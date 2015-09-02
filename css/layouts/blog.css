@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'jaapoki-enchance';
+    src: url('jaapokkienchance-regular.ttf');
+    /*src: url('FileName.eot?#iefix') format('embedded-opentype'),
+         url('FileName.woff') format('woff'),
+         url('FileName.ttf') format('truetype'),
+         url('FileName.svg#FontName') format('svg');*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'jaapoki';
+    src: url('Jaapokki-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background: #eee;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+/*.ted {
+    background: #eee;
+}
+.ted:after { background-size: 50px ;}*/
+
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    /*background: rgb(61, 79, 93);*/
+    background: #47526F;
+    color: #fff;
+}
+
+
+#sean-icon {
+  margin: 1.35em 0em 0em 2.1em;
+}
+
+.sean-bubble {
+  width: 210px;
+  border-radius: 50%;
+  border: 6px solid #eee;
+}
+
+
+
+
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    font-family: jaapoki;
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-family: jaapoki;
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 1em 0;
+}
+
+.post {
+    padding-bottom: 2em;
+}
+
+
+/* Had to manually go in and add flex-box. In order to get things working in firefox */
+#lightGallery {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+
+.art-work-header-title {
+    font-family: jaapoki;
+    color: #47526F;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.art-work-header-under {
+    font-family: jaapoki;
+    color: #47526F;
+    font-size: 15pt;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.small-container {
+  position: relative;
+  /* change box height */
+  /* try 175px */
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.small-container img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.small-container img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+/*.small-container {
+    width: 418px;
+    height: 240px;
+    overflow: hidden;
+}
+.small-container img {
+    width: 100%;
+}*/
+
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+
+    .header {
+        margin: 20% 2em 0;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+    /*#sean-icon {
+      margin-;
+    }*/
+}
+
+@media (max-width: 1125px) {
+    .sean-bubble {
+      width: 110px;
+      border: 3px solid #eee;
+    }
+}
+
+@media (max-width: 767px) {
+    .sean-bubble {
+      width: 210px;
+      border: 6px solid #eee;
+    }
+}
+
+
+@media (max-width: 411px) {
+    .small-container {
+      width: 410px;
+      height: 150px;
+      margin-left: -60px;
+    }
+    .small-container img {
+      height: 200%;
+    }
+}
+
+@media (max-width: 400px) {
+    .small-container {
+      width: 401px;
+      height: 150px;
+      margin-left: -60px;
+    }
+    .small-container img {
+      height: 200%;
+    }
+}
+
+@media (max-width: 375px) {
+    .small-container {
+      width: 376px;
+      height: 150px;
+      margin-left: -60px;
+    }
+    .small-container img {
+      height: 200%;
+    }
+}
+
+@media (max-width: 350px) {
+    .small-container {
+      width: 351px;
+      height: 150px;
+      margin-left: -60px;
+    }
+    .small-container img {
+      height: 200%;
+    }
+}
+
+@media (max-width: 300px) {
+    .small-container {
+      width: 301px;
+      height: 150px;
+      margin-left: -60px;
+    }
+    .small-container img {
+      height: 200%;
+    }
+}
+
+@media (max-width: 250px) {
+    .small-container {
+      width: 251px;
+      height: 150px;
+      margin-left: -60px;
+    }
+    .small-container img {
+      height: 200%;
+    }
+}
+
+@media (max-width: 200px) {
+    .small-container {
+      width: 201px;
+      height: 150px;
+      margin-left: -60px;
+    }
+    .small-container img {
+      height: 200%;
+    }
+}
+
+.pure-button:hover {
+    border-color: rgb(176, 202, 219);
+    background: rgb(176, 202, 219);
+}
+
+.filler {
+    height: 300px;
+}
